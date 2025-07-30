@@ -1,5 +1,5 @@
 {% set name = "opentelemetry-instrumentation-asyncpg" %}
-{% set version = "0.56b0" %}
+{% set version = "0.57b0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/opentelemetry_instrumentation_asyncpg-{{ version }}.tar.gz
-  sha256: 1306fd2c9e7c86be342dc3551e0bc891998bd1a7a427ac96fd8fcbee215b1d4a
+  sha256: acd6c414afb8e1e3b18848aa7e44c19a0bdf47a9a83ca8c31d0322ec48bf66c6
 
 build:
   noarch: python
@@ -22,8 +22,8 @@ requirements:
   run:
     - python >={{ python_min }}
     - opentelemetry-api ~=1.12
-    - opentelemetry-instrumentation ==0.56b0
-    - opentelemetry-semantic-conventions ==0.56b0
+    - opentelemetry-instrumentation ==0.57b0
+    - opentelemetry-semantic-conventions ==0.57b0
     # - opentelemetry-test-utils ==0.37b0
     # - opentelemetry-instrumentation-asyncpg 
     # - asyncpg >=0.12.0
@@ -44,6 +44,7 @@ requirements:
     # - asyncpg >=0.12.0
     # - opentelemetry-test-utils ==0.44b0
     # - opentelemetry-instrumentation-asyncpg 
+    # - asyncpg >=0.12.0
     # - asyncpg >=0.12.0
     # - asyncpg >=0.12.0
     # - asyncpg >=0.12.0
